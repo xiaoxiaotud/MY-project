@@ -111,16 +111,6 @@ pyplot.show()
 
 # make a prediction
 yhat = model.predict(test_X)
-#test_X = test_X.reshape((test_X.shape[0], test_X.shape[2]))
-## invert scaling for forecast
-#inv_yhat = concatenate((yhat, test_X[:, 1:]), axis=1)
-#inv_yhat = scaler.inverse_transform(inv_yhat)
-#inv_yhat = inv_yhat[:,0]
-## invert scaling for actual
-#test_y = test_y.reshape((len(test_y), 1))
-#inv_y = concatenate((test_y, test_X[:, 1:]), axis=1)
-#inv_y = scaler.inverse_transform(inv_y)
-#inv_y = inv_y[:,0]
 
 
 # Evaluation
